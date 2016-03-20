@@ -1,7 +1,7 @@
 import re
 ctype = ['int', 'unsigned']
 
-address = 0x36000
+address = 0x36004
 
 file1 = open("teststruct.h",'rb')
 file2 = open('test.h', 'wb')
