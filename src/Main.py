@@ -2,6 +2,7 @@ import re
 ctype = ['int', 'unsigned']
 
 address = 0x36004
+space = 0
 
 file1 = open("teststruct.h",'rb')
 file2 = open('test.h', 'wb')
@@ -25,8 +26,8 @@ for line in lines:
                 
                 for i in range(count):
                     num *= int(result.group(i+1))
-            space = width*num
             address = address + space
+            space = width*num
             #append the address at the end of the line (before \r\n).
             pos = line.index('\r') #find the positon of \r in the string
             line = line[:pos] + '   //0x' + str('%x' % address) + '\r\n'
