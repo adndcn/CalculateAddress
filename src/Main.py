@@ -32,6 +32,10 @@ for line in lines:
             pos = line.index('\r') #find the positon of \r in the string
             line = line[:pos] + '   //0x' + str('%x' % address) + '\r\n'
             file2.write(line)    
+        elif temp[0] == 'struct':
+            address = input('find a structure named: ' + temp[-1][:-1]+ '\n' + 'please enter an address>')
+            space = 0 
+            file2.write(line)
         else:
             file2.write(line)
     else:
