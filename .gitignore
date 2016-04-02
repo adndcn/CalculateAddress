@@ -1,2 +1,11 @@
 src/test.h
 src/test.h
+*.pyd
+src/dist/CalAddr.exe
+*.zip
+src/dist/python27.dll
+*.pyc
+src/build/bdist.win-amd64/winexe/temp/bz2.py
+src/build/bdist.win-amd64/winexe/temp/select.py
+src/build/bdist.win-amd64/winexe/temp/_hashlib.py
+src/build/bdist.win-amd64/winexe/temp/unicodedata.py
