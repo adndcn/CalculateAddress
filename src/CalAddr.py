@@ -12,7 +12,7 @@ if __name__ == '__main__':
     file1 = open(sys.argv[1], 'rb')
     filename = os.path.split(sys.argv[1])[-1]
     filepath = os.path.split(sys.argv[1])[0]
-    file2 = open(filepath + '_' + sys.argv[1], 'wb')
+    file2 = open(filepath + '_' + filename, 'wb')
     
     address = 0x0
     pace = 0
