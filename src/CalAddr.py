@@ -49,6 +49,9 @@ if __name__ == '__main__':
                         structname = line[:-2]
                     word = '' #clear
                 elif line[i] == '{':
+                    if word == 'struct':
+                        substructflag = 1
+                        structname = line[:-2]
                     if substructflag == 1:
                         substructflag = 0
                         flag = 2 #struct mode

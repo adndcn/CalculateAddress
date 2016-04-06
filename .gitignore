@@ -9,3 +9,9 @@ src/build/bdist.win-amd64/winexe/temp/bz2.py
 src/build/bdist.win-amd64/winexe/temp/select.py
 src/build/bdist.win-amd64/winexe/temp/_hashlib.py
 src/build/bdist.win-amd64/winexe/temp/unicodedata.py
+src/teststruct.h
+src/_teststruct.h
+src/teststruct.h
+src/__teststruct.h
+src/teststruct.h
+src/teststruct.h
