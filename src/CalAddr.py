@@ -58,6 +58,10 @@ if __name__ == '__main__':
                         address = input('find a structure named: ' + structname + '\n' + 'please enter an address>')
                         space = 0
                     word = ''
+                elif line[i] == ';':
+                    if substructflag == 1:
+                        substructflag = 0;
+                    word = ''
                 else:
                     word = ''
                     
